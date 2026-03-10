@@ -1,6 +1,8 @@
-@import "primeicons/primeicons.css";
+@use "primeicons/primeicons.css";
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -8,7 +10,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: var(--p-font-family);
+  font-family: var(--p-font-family), sans-serif;
   background: var(--p-surface-ground);
   color: var(--p-text-color);
 }

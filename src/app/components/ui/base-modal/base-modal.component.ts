@@ -5,7 +5,7 @@ import { ButtonModule } from "primeng/button";
   selector: "hp-base-modal",
   imports: [ButtonModule],
   templateUrl: "./base-modal.component.html",
-  styleUrl: "./base-modal.component.css",
+  styleUrl: "./base-modal.component.scss",
 })
 export class BaseModalComponent {
   readonly title = input<string>("");

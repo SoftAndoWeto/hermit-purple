@@ -11,7 +11,7 @@
       "schematics": {
         "@schematics/angular:component": {
           "type": "component",
-          "style": "css",
+          "style": "scss",
           "prefix": "hp"
         },
         "@schematics/angular:directive": {
@@ -58,7 +58,7 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ]
           },
           "configurations": {
