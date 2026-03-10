@@ -1,0 +1,30 @@
+<div class="task-list">
+  <h2 class="task-list__title">Задачи</h2>
+
+  <hp-task-add-form />
+
+  @if (store.tasks().length === 0) {
+    <p class="task-list__empty">Задач пока нет</p>
+  } @else {
+    <ul class="task-list__items">
+      @for (task of store.tasks(); track task.id) {
+        <li class="task-list__item" [class.task-list__item--completed]="task.completed">
+          <p-checkbox
+            [binary]="true"
+            [ngModel]="task.completed"
+            (ngModelChange)="store.toggleTask(task.id)"
+          />
+          <span class="task-list__item-title">{{ task.title }}</span>
+          <p-button
+            icon="pi pi-trash"
+            severity="danger"
+            [text]="true"
+            [rounded]="true"
+            size="small"
+            (onClick)="store.removeTask(task.id)"
+          />
+        </li>
+      }
+    </ul>
+  }
+</div>
