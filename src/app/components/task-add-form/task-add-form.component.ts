@@ -8,7 +8,7 @@ import { FormsModule } from "@angular/forms";
   selector: "hp-task-add-form",
   imports: [ButtonModule, InputTextModule, FormsModule],
   templateUrl: "./task-add-form.component.html",
-  styleUrl: "./task-add-form.component.css",
+  styleUrl: "./task-add-form.component.scss",
 })
 export class TaskAddFormComponent {
   readonly store = inject(TaskStore);

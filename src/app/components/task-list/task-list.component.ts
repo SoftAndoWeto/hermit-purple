@@ -11,7 +11,7 @@ import { TaskAddFormComponent } from "~components/task-add-form/task-add-form.co
   selector: "hp-task-list",
   imports: [CheckboxModule, ButtonModule, FormsModule, TaskAddFormComponent],
   templateUrl: "./task-list.component.html",
-  styleUrl: "./task-list.component.css",
+  styleUrl: "./task-list.component.scss",
 })
 export class TaskListComponent {
   readonly store = inject(TaskStore);
