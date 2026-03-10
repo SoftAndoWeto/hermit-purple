@@ -7,18 +7,11 @@
   justify-content: center;
 }
 
-.modal-backdrop {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
-
 .modal {
-  position: relative;
-  z-index: 1;
-  background: var(--p-surface-overlay);
+  background-color: var(--p-surface-card);
   border: 1px solid var(--p-surface-border);
   border-radius: var(--p-border-radius-xl);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.24);
   min-width: 400px;
   max-width: 90vw;
   max-height: 90vh;
