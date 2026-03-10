@@ -17,7 +17,7 @@ export const TaskStore = signalStore(
   { providedIn: "root" },
   withState(initialState),
   withMethods((store, tauriStore = inject(TauriStoreService)) => ({
-    async addTask(title: string): Promise<void> {
+    async addTask(title: string) {
       const task: Task = {
         id: crypto.randomUUID(),
         title,
@@ -29,7 +29,7 @@ export const TaskStore = signalStore(
       await tauriStore.set(STORE_KEY, tasks);
     },
 
-    async toggleTask(id: string): Promise<void> {
+    async toggleTask(id: string) {
       const tasks = store.tasks().map((t) =>
         t.id === id ? { ...t, completed: !t.completed } : t
       );
@@ -37,7 +37,7 @@ export const TaskStore = signalStore(
       await tauriStore.set(STORE_KEY, tasks);
     },
 
-    async removeTask(id: string): Promise<void> {
+    async removeTask(id: string) {
       const tasks = store.tasks().filter((t) => t.id !== id);
       patchState(store, { tasks });
       await tauriStore.set(STORE_KEY, tasks);
@@ -46,7 +46,6 @@ export const TaskStore = signalStore(
   withHooks({
     async onInit(store, tauriStore = inject(TauriStoreService)) {
       const saved = await tauriStore.get<Task[]>(STORE_KEY);
-      console.log(saved);
       if (saved?.length) {
         patchState(store, { tasks: saved });
       }
