@@ -14,3 +14,4 @@
 #### :rocket: New Feature
 
 - Implement app launch in the system tray
+- Added the ability to add date and time to a task
