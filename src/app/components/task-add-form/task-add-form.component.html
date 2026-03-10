@@ -1,0 +1,11 @@
+<form class="task-add-form" (ngSubmit)="add()">
+  <input
+    pInputText
+    type="text"
+    placeholder="Новая задача..."
+    [ngModel]="newTitle()"
+    (ngModelChange)="newTitle.set($event)"
+    name="newTitle"
+  />
+  <p-button type="submit" icon="pi pi-plus" label="Добавить" />
+</form>

@@ -1,0 +1,10 @@
+.modal-confirm__message {
+  margin: 0 0 1.25rem;
+  color: var(--p-text-color);
+}
+
+.modal-confirm__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

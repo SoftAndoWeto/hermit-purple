@@ -11,13 +11,15 @@
       "schematics": {
         "@schematics/angular:component": {
           "type": "component",
-          "style": "css"
+          "style": "css",
+          "prefix": "hp"
         },
         "@schematics/angular:directive": {
-          "type": "directive"
+          "type": "directive",
+          "prefix": "hp"
         },
         "@schematics/angular:service": {
-          "type": "service"
+          "type": "service",
         },
         "@schematics/angular:guard": {
           "typeSeparator": "."
