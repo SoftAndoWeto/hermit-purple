@@ -1,0 +1,6 @@
+<hp-modal-confirm
+  title="Удалить задачу?"
+  [message]="'Удалить «' + task().title + '»?'"
+  (result)="result.emit($event)"
+  (closed)="closed.emit()"
+/>
