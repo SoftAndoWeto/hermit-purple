@@ -211,6 +211,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@angular/animations@npm:^21.2.2":
+  version: 21.2.2
+  resolution: "@angular/animations@npm:21.2.2"
+  dependencies:
+    tslib: "npm:^2.3.0"
+  peerDependencies:
+    "@angular/core": 21.2.2
+  checksum: 10c0/145d4acb4240109c094a09c67f9caa1754e8d3bdbf67ec4b6fb69d97b2666ec5297e40894ea205bf02a5982f10a896e717c9675e03a093d6c12d77b8e8fd12d0
+  languageName: node
+  linkType: hard
+
 "@angular/build@npm:^20.1.4":
   version: 20.3.19
   resolution: "@angular/build@npm:20.3.19"
@@ -3491,6 +3502,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "hermit-purple@workspace:."
   dependencies:
+    "@angular/animations": "npm:^21.2.2"
     "@angular/build": "npm:^20.1.4"
     "@angular/cli": "npm:^20.1.4"
     "@angular/common": "npm:^20.1.4"

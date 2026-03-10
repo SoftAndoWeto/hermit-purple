@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "hermit-purple",
+  "productName": "Hermit Purple",
   "version": "0.1.0",
-  "identifier": "com.ilya.hermit-purple",
+  "identifier": "com.codeofmisanthrope.hermit-purple",
   "build": {
     "beforeDevCommand": "yarn start",
     "devUrl": "http://localhost:1420",
