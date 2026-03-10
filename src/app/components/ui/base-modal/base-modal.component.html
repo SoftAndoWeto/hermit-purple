@@ -1,0 +1,18 @@
+<div class="modal-backdrop" (click)="close()"></div>
+
+<div class="modal">
+  <div class="modal__header">
+    <span class="modal__title">{{ title() }}</span>
+    <p-button
+      icon="pi pi-times"
+      [text]="true"
+      [rounded]="true"
+      size="small"
+      (onClick)="close()"
+    />
+  </div>
+
+  <div class="modal__body">
+    <ng-content />
+  </div>
+</div>
