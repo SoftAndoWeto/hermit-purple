@@ -16,7 +16,15 @@
             [ngModel]="task.completed"
             (ngModelChange)="store.toggleTask(task.id)"
           />
-          <span class="task-list__item-title">{{ task.title }}</span>
+          <div class="task-list__item-info">
+            <span class="task-list__item-title">{{ task.title }}</span>
+            @if (task.dueDate) {
+              <span class="task-list__item-due" [class.task-list__item-due--overdue]="task.dueDate < now">
+                <i class="pi pi-clock"></i>
+                {{ task.dueDate | date: 'dd.MM.yyyy HH:mm' }}
+              </span>
+            }
+          </div>
           <p-button
             data-action="delete"
             icon="pi pi-trash"

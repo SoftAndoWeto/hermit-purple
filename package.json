@@ -3,7 +3,7 @@
   "description": "Desktop application Hermit Purple",
   "homepage": "https://github.com/CodeOfMisanthrope/hermit-purple/#readme",
   "license": "MIT",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": {
     "name": "CodeOfMisanthrope",
     "email": "iosdsbb@gmail.com",
@@ -48,6 +48,7 @@
     "@angular/cli": "^20.1.4",
     "@angular/compiler-cli": "^20.1.4",
     "@tauri-apps/cli": "^2",
+    "sass": "^1.97.3",
     "typescript": "~5.8.3"
   },
   "packageManager": "yarn@4.13.0"

@@ -6,7 +6,7 @@ import { BaseModalComponent } from "~components/ui/base-modal/base-modal.compone
   selector: "hp-modal-confirm",
   imports: [BaseModalComponent, ButtonModule],
   templateUrl: "./modal-confirm.component.html",
-  styleUrl: "./modal-confirm.component.css",
+  styleUrl: "./modal-confirm.component.scss",
 })
 export class ModalConfirmComponent {
   readonly title = input<string>("Подтверждение");

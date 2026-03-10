@@ -1,4 +1,5 @@
 import { Component, inject } from "@angular/core";
+import { DatePipe } from "@angular/common";
 import { TaskStore } from "~data/task/store/task.store";
 import { ModalService } from "~data/modal/services/modal.service";
 import { DeleteTaskModalComponent } from "~components/delete-task-modal/delete-task-modal.component";
@@ -9,12 +10,13 @@ import { TaskAddFormComponent } from "~components/task-add-form/task-add-form.co
 
 @Component({
   selector: "hp-task-list",
-  imports: [CheckboxModule, ButtonModule, FormsModule, TaskAddFormComponent],
+  imports: [CheckboxModule, ButtonModule, FormsModule, TaskAddFormComponent, DatePipe],
   templateUrl: "./task-list.component.html",
-  styleUrl: "./task-list.component.css",
+  styleUrl: "./task-list.component.scss",
 })
 export class TaskListComponent {
   readonly store = inject(TaskStore);
+  readonly now = new Date().toISOString();
   private readonly modalService = inject(ModalService);
 
   onListClick(event: MouseEvent): void {

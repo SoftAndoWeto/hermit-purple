@@ -6,6 +6,6 @@ import { ModalHostComponent } from "~components/ui/modal-host/modal-host.compone
   selector: "hp-root",
   imports: [TaskListComponent, ModalHostComponent],
   templateUrl: "./app.component.html",
-  styleUrl: "./app.component.css",
+  styleUrl: "./app.component.scss",
 })
 export class AppComponent {}
