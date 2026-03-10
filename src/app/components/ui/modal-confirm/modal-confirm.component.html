@@ -1,0 +1,10 @@
+<hp-base-modal [title]="title()" (closed)="onBaseModalClosed()">
+  @if (message()) {
+    <p class="modal-confirm__message">{{ message() }}</p>
+  }
+
+  <div class="modal-confirm__actions">
+    <p-button label="Нет" severity="secondary" (onClick)="confirm(false)" />
+    <p-button label="Да" (onClick)="confirm(true)" />
+  </div>
+</hp-base-modal>
