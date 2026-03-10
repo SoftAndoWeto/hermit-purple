@@ -1,6 +1,6 @@
 [package]
 name = "hermit-purple"
-version = "0.2.0"
+version = "0.3.0"
 description = "Desktop application Hermit Purple"
 authors = ["CodeOfMisanthrope"]
 edition = "2021"
