@@ -17,12 +17,13 @@ export const TaskStore = signalStore(
   { providedIn: "root" },
   withState(initialState),
   withMethods((store, tauriStore = inject(TauriStoreService)) => ({
-    async addTask(title: string) {
+    async addTask(title: string, dueDate?: string | null) {
       const task: Task = {
         id: crypto.randomUUID(),
         title,
         completed: false,
-        createdAt: new Date(),
+        createdAt: new Date().toISOString(),
+        dueDate: dueDate ?? null,
       };
       const tasks = [...store.tasks(), task];
       patchState(store, { tasks });
