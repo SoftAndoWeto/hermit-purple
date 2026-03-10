@@ -1,9 +1,4 @@
 import { Injectable, Type, ViewContainerRef, ComponentRef } from "@angular/core";
-import { BaseModalComponent } from "~components/ui/base-modal/base-modal.component";
-
-export interface ModalConfig {
-  title?: string;
-}
 
 @Injectable({ providedIn: "root" })
 export class ModalService {
@@ -13,22 +8,16 @@ export class ModalService {
     this.vcr = vcr;
   }
 
-  open<T>(component: Type<T>, config: ModalConfig = {}): ComponentRef<BaseModalComponent> {
-    const innerRef = this.vcr.createComponent(component);
+  open<T>(component: Type<T>, inputs: Record<string, unknown> = {}): ComponentRef<T> {
+    const ref = this.vcr.createComponent(component);
 
-    const modalRef = this.vcr.createComponent(BaseModalComponent, {
-      projectableNodes: [[innerRef.location.nativeElement]],
-    });
+    Object.entries(inputs).forEach(([key, value]) => ref.setInput(key, value));
 
-    if (config.title) {
-      modalRef.setInput("title", config.title);
+    const instance = ref.instance as Record<string, any>;
+    if ("closed" in instance) {
+      instance["closed"].subscribe(() => ref.destroy());
     }
 
-    modalRef.instance.closed.subscribe(() => {
-      modalRef.destroy();
-      innerRef.destroy();
-    });
-
-    return modalRef;
+    return ref;
   }
 }

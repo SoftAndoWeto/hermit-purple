@@ -15,6 +15,11 @@ export class BaseModalComponent {
     this.closed.emit();
   }
 
+  @HostListener("click")
+  onBackdropClick(): void {
+    this.close();
+  }
+
   @HostListener("document:keydown.escape")
   onEscape(): void {
     this.close();
