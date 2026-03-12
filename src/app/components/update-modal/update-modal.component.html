@@ -1,0 +1,21 @@
+<hp-base-modal title="Доступно обновление" (closed)="skip()">
+  <p>Версия {{ update().version }}</p>
+
+  @if (update().body) {
+    <p class="update-modal__notes">{{ update().body }}</p>
+  }
+
+  <div class="update-modal__actions">
+    <p-button
+      label="Пропустить"
+      severity="secondary"
+      [disabled]="installing()"
+      (onClick)="skip()"
+    />
+    <p-button
+      [label]="installing() ? 'Установка...' : 'Установить'"
+      [loading]="installing()"
+      (onClick)="install()"
+    />
+  </div>
+</hp-base-modal>
