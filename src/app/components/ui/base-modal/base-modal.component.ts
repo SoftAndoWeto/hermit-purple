@@ -15,9 +15,11 @@ export class BaseModalComponent {
     this.closed.emit();
   }
 
-  @HostListener("click")
-  onBackdropClick(): void {
-    this.close();
+  @HostListener("click", ["$event"])
+  onBackdropClick(event: MouseEvent): void {
+    if (event.target === event.currentTarget) {
+      this.close();
+    }
   }
 
   @HostListener("document:keydown.escape")
