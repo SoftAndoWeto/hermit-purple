@@ -7,6 +7,12 @@
     "core:default",
     "opener:default",
     "store:allow-load",
-    "store:default"
+    "store:default",
+    "notification:default",
+    "notification:allow-request-permission",
+    "notification:allow-is-permission-granted",
+    "notification:allow-notify",
+    "updater:default",
+    "process:default"
   ]
 }

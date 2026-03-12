@@ -9,6 +9,12 @@
 > - :house: [Internal]
 > - :nail_care: [Polish]
 
+## v0.4.0 (2026-03-11)
+
+#### :rocket: New Feature
+
+- Added notifications
+
 ## v0.3.0 (2026-03-10)
 
 #### :rocket: New Feature
