@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "Hermit_Purple",
-  "version": "0.4.0",
-  "identifier": "com.codeofmisanthrope.hermit-purple",
+  "version": "0.3.0",
+  "identifier": "com.softandoweto.hermit-purple",
   "build": {
     "beforeDevCommand": "yarn start",
     "devUrl": "http://localhost:1420",
@@ -23,7 +23,7 @@
   },
   "plugins": {
     "updater": {
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEMzOTBCNTMyODhFMzg1ODUKUldTRmhlT0lNcldRdytDY0F4ajJjUFB0WU5qVjlJMCtjVUttWVJGOTQ1RUZKaFVGcTRpWXg2bHAK",
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDkwRkVBNjVBRjdBNDdCMkQKUldRdGU2VDNXcWIra05DZWtMNktlUHJ5U0g4R1VDMUF4Q08vZWpTYlV2Nkd5N2JyN24xZXZyVEsK",
       "endpoints": [
         "https://raw.githubusercontent.com/SoftAndoWeto/hermit-purple/main/updates/latest.json"
       ]
