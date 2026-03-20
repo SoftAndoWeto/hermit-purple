@@ -21,6 +21,12 @@
       ],
       "~components/*": [
         "src/app/components/*"
+      ],
+      "~pages/*": [
+        "src/app/pages/*"
+      ],
+      "~layouts/*": [
+        "src/app/layouts/*"
       ]
     }
   },
