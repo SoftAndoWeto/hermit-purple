@@ -9,11 +9,20 @@
 > - :house: [Internal]
 > - :nail_care: [Polish]
 
+## v0.5.0 (2026-03-20)
+
+#### :rocket: New Feature
+
+- Added theme toggle
+- Added window state
+- Added single instance app
+
 ## v0.4.0 (2026-03-11)
 
 #### :rocket: New Feature
 
 - Added notifications
+- Added updater
 
 ## v0.3.0 (2026-03-10)
 
