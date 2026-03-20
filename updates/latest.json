@@ -1,11 +1,11 @@
 {
-  "version": "0.4.0",
-  "notes": "Initial release",
-  "pub_date": "2026-03-11T00:00:00Z",
+  "version": "0.5.0",
+  "notes": "Released 0.5.0!",
+  "pub_date": "2026-03-20T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRdGU2VDNXcWIra0g2WVI4NXlpaTEvMEl3UnVUVWRaNHRwYm9TNlJ0SXFxazRlWUlxaUg2QTZFa09BRXNFN3VPU0lHbzZLMElpWEsxZzFnQ0VFbEc3MFlTY3NGTlhMMGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzczOTU4ODU5CWZpbGU6SGVybWl0X1B1cnBsZV8wLjQuMF94NjQtc2V0dXAuZXhlCjVKZlp3WUdreUs4NHVldE5wRGdPb0NpRnN0OTZqb0lmZzV5YU9Od2xNeW9kRzY4Q3h2RElYa0xGd1RHS3ZBRE5RRkJFTW5QKys5N1NZeTVwR1dEckF3PT0K",
-      "url": "https://github.com/SoftAndoWeto/hermit-purple/releases/download/v0.4.0/Hermit_Purple_0.4.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRdGU2VDNXcWIra0ZpMmV2WjllMjFGMCtqQStjVHlMQ3RUWHZybGd6ZFVERTRWekxScVlqQzRxQWhMSVJsNnF6anh5WEd3QUovU2lGYXZLOUczeCtrVmJqZXBlOXA1VkFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc0MDAwNjAzCWZpbGU6SGVybWl0X1B1cnBsZV8wLjUuMF94NjQtc2V0dXAuZXhlCjkyS2hYTStZdUdrTWNOeXNwTkVsbU1oRkFRalFyVkNRZmJBYVY0aTBGRXBXcDFENHRpeDVKc1RqWlYxZGFTQ0U1QkM4R3NhekI2RWgrWlpqcXJ2UUNBPT0K",
+      "url": "https://github.com/SoftAndoWeto/hermit-purple/releases/download/v0.5.0/Hermit_Purple_0.5.0_x64-setup.exe"
     }
   }
 }
