@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from "@angular/core";
-import { TaskListComponent } from "~components/task-list/task-list.component";
+import { RouterOutlet } from "@angular/router";
 import { ModalHostComponent } from "~components/ui/modal-host/modal-host.component";
 import { AppVersionComponent } from "~components/ui/app-version/app-version.component";
 import { ThemeToggleComponent } from "~components/ui/theme-toggle/theme-toggle.component";
@@ -11,7 +11,7 @@ import { UpdateModalComponent } from "~components/update-modal/update-modal.comp
 
 @Component({
   selector: "hp-root",
-  imports: [TaskListComponent, ModalHostComponent, AppVersionComponent, ThemeToggleComponent],
+  imports: [RouterOutlet, ModalHostComponent, AppVersionComponent, ThemeToggleComponent],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
 })
