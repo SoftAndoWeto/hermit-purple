@@ -14,6 +14,7 @@
 #### :rocket: New Feature
 
 - Added theme toggle
+- Added window state
 
 ## v0.4.0 (2026-03-11)
 
