@@ -1,7 +1,7 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "Hermit_Purple",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "identifier": "com.softandoweto.hermit-purple",
   "build": {
     "beforeDevCommand": "yarn start",
@@ -13,8 +13,9 @@
     "windows": [
       {
         "title": "Hermit Purple",
-        "width": 800,
-        "height": 600
+        "width": 1000,
+        "height": 1200,
+        "visible": false
       }
     ],
     "security": {

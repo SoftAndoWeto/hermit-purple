@@ -1,0 +1,14 @@
+<div class="onboarding">
+  <h1 class="onboarding__title">Привет!</h1>
+  <p class="onboarding__subtitle">Как вас зовут?</p>
+  <div class="onboarding__form">
+    <input
+      pInputText
+      [(ngModel)]="name"
+      (keydown.enter)="submit()"
+      placeholder="Введите имя"
+      autofocus
+    />
+    <button pButton label="Продолжить" [disabled]="!name.trim()" (click)="submit()"></button>
+  </div>
+</div>
