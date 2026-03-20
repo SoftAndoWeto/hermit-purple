@@ -19,7 +19,7 @@
           "prefix": "hp"
         },
         "@schematics/angular:service": {
-          "type": "service",
+          "type": "service"
         },
         "@schematics/angular:guard": {
           "typeSeparator": "."
